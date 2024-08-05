@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <title>Auras - Two Worlds</title>
+    <link rel="stylesheet" href="css.css"/>
+    <script src="js.js"></script>
+</head>
+<body>
+    <div class="background-video">
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="src/background.mp4" type="video/mp4">
+        </video>
+        <div class="blur-video"></div>
+    </div>
+    <div id="main-container"> 
+        <div id="container-bushin">
+            <button class="card neon" id="bushin-btn" style="animation: fade-in 2s ease-in-out;" onclick="navigateDivs('bushin-btn','container-bushin','container-categories')">
+                <h1>気</h1>
+                <h2>Bushin</h2>
+            </button>
+        </div>
+    </div>
+</body>
+</html>
