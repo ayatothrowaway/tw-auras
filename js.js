@@ -205,19 +205,18 @@ let abilitiesHtml_emiss =
 
 document.addEventListener("DOMContentLoaded",(event) => {
     mainDiv = document.getElementById('main-container');
-
-
-    configAbiItems()
-
-
+    document.getElementById('btn-click').volume = 0.2
+    document.getElementById('bg-audio').volume = 0.2
 
 })
+
 function navigateDivs(buttonClicked, currentdiv, nextdiv){
     var cbtn = document.getElementById(buttonClicked)
 
     switch (nextdiv){
         case "container-categories":
             transitionDiv(cbtn, categoriesHtml)
+            document.getElementById('bg-audio').play()
             break;
         case "container-abilites":
             switch(buttonClicked){
@@ -240,6 +239,8 @@ function navigateDivs(buttonClicked, currentdiv, nextdiv){
 }
 
 function transitionDiv(btn, div){
+    document.getElementById('btn-click').currentTime = 0;
+    document.getElementById('btn-click').play()
     btn.classList.add('anim-expand');
     mainDiv.classList.add('anim-fade-out-in')
     setTimeout(function(){
