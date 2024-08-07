@@ -165,6 +165,8 @@ body{
     font-size: 15px;
     margin-left: 10%;
     margin-right: 10%;
+    width: 50%;
+    min-width: 325px;
 }
 
 
@@ -280,11 +282,23 @@ body{
     --box-shadow-color: #f3fec1;
     --background-color: #708a0022;
 }
+.neon-orange{
+    --text-shadow-color: #ff7900;
+    --box-shadow-color: #ffc793;
+    --background-color: #ff790022;
+}
+.neon-blue{
+    --text-shadow-color: #00758a;
+    --box-shadow-color: #c1f5fe;
+    --background-color: #00758a22;
+}
 
 .neon-green-border, 
 .neon-purple-border, 
 .neon-red-border,
-.neon-yellow-border{
+.neon-yellow-border,
+.neon-blue-border,
+.neon-orange-border{
     --text-shadow-color: #d2fec9;
     background-color: #158a0088;
     opacity: 0.8;
@@ -295,7 +309,9 @@ body{
 .neon-green-border:hover, 
 .neon-purple-border:hover, 
 .neon-red-border:hover,
-.neon-yellow-border:hover{
+.neon-yellow-border:hover,
+.neon-blue-border:hover,
+.neon-orange-border:hover{
     box-shadow: 0 0 10px #d2fec9;
     transform: scale(1.2);
     opacity: 1;
@@ -323,4 +339,19 @@ body{
 .neon-yellow-border:hover, .neon-yellow-border.item-selected{
     background-color: #b3a700;
     text-shadow: #708a00 0 0 1px;
+}
+.neon-blue-border{
+    --text-shadow-color: #c1f5fe;
+    background-color: #052f3688
+}
+.neon-blue-border:hover, .neon-blue-border.item-selected{
+    background-color: #00758a;
+}
+.neon-orange-border{
+    --text-shadow-color: #ffc793;
+    background-color: #ff770034; /* 57*/
+}
+.neon-orange-border:hover, .neon-orange-border.item-selected{
+    background-color: #e26a00;
+    text-shadow: #80420d 0 0 1px;
 }
